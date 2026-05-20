@@ -20,7 +20,7 @@ public class ArmMovement : MonoBehaviour
         Vector2 input = moveAction.ReadValue<Vector2>();
 
         // W/S or Up/Down
-        float move = input.y;
+        float move = input.y * -1;
 
         // No input -> free movement
         if (Mathf.Abs(move) < 0.1f)
